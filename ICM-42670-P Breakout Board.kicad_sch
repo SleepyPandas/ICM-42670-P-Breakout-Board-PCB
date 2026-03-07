@@ -8221,24 +8221,24 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 227.33 91.44 90)
+		(at 199.39 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "677c486a-d6cf-4482-a849-62ed37f45129")
-		(property "Reference" "C5"
-			(at 227.33 83.82 90)
+		(uuid "6b3f4fbd-51c3-4f5f-95bd-f27a4c9f0211")
+		(property "Reference" "C4"
+			(at 199.39 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1 µF"
-			(at 227.33 86.36 90)
+		(property "Value" "2.2 µF"
+			(at 199.39 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8246,7 +8246,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 231.14 90.4748 0)
+			(at 203.2 90.4748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8255,7 +8255,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 91.44 0)
+			(at 199.39 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8264,7 +8264,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 227.33 91.44 0)
+			(at 199.39 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "X7R, 2.2 µF ±10% 16V"
+			(at 199.39 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8273,15 +8282,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f5f98a98-bc6f-4e06-8748-38f3c990a002")
+			(uuid "363ed663-4d50-42bf-9a0c-03b20c50f36b")
 		)
 		(pin "2"
-			(uuid "efb9c5b8-538a-4db3-aadf-eb1ac294c70a")
+			(uuid "d6219ec9-1400-49e5-aefa-3ec6016f7404")
 		)
 		(instances
-			(project "ICM-42688-P Breakout Board"
+			(project "ICM-42670-P Breakout Board"
 				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -8805,6 +8814,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 227.33 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7d2ec5f-be03-40ee-93c9-1eccbfcd48bb")
+		(property "Reference" "C5"
+			(at 227.33 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2 µF"
+			(at 227.33 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 231.14 90.4748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 227.33 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "X7R, 2.2 µF ±10% 16V"
+			(at 227.33 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0758d013-1d9f-419e-97db-b93eca329e05")
+		)
+		(pin "2"
+			(uuid "9fbafd6b-16cc-4f41-862c-0fd291f353f4")
+		)
+		(instances
+			(project "ICM-42670-P Breakout Board"
+				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 162.56 99.06 90)
 		(unit 1)
@@ -8873,81 +8959,12 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 199.39 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf802f2e-9bed-4c3d-b6f7-497a9d6a92cb")
-		(property "Reference" "C4"
-			(at 199.39 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1 µF"
-			(at 199.39 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 203.2 90.4748 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 199.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fac0de9e-bb24-4146-b8c6-d723a5f6eb4d")
-		)
-		(pin "2"
-			(uuid "ff7b56c8-94f7-4a3e-93b5-61df06cf7bd6")
-		)
-		(instances
-			(project "ICM-42688-P Breakout Board"
-				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 165.1 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9b1c610-9f01-4482-88b7-12ed58131bbf")
 		(property "Reference" "C1"
 			(at 168.91 106.6799 0)
@@ -8986,6 +9003,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "X7R, 0.1 µF ±10% >= 16V"
 			(at 165.1 107.95 0)
 			(effects
 				(font
@@ -9189,6 +9215,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 179.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "X7R, 2.2 µF ±10% 16V"
 			(at 179.07 107.95 0)
 			(effects
 				(font
