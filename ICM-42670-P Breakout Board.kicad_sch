@@ -1510,7 +1510,7 @@
 		(uuid "d4cfc385-532c-40d5-ae2d-f92f916a0853")
 	)
 	(junction
-		(at 46.99 96.52)
+		(at 35.56 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa6c42e5-684d-45d5-997d-219164969c44")
@@ -1523,7 +1523,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 96.52) (xy 46.99 102.87)
+			(xy 35.56 96.52) (xy 35.56 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1613,13 +1613,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 96.52) (xy 46.99 96.52)
+			(xy 30.48 96.52) (xy 35.56 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "22cd1a09-1bd0-4263-9122-391b0bdf7df0")
+	)
+	(wire
+		(pts
+			(xy 43.18 101.6) (xy 44.45 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b617ee-3e28-43fb-928b-f8fc7d8ed474")
 	)
 	(wire
 		(pts
@@ -1693,6 +1703,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 121.92) (xy 241.3 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50a4828e-5fed-4f55-89fb-d806c0c319e4")
+	)
+	(wire
+		(pts
 			(xy 222.25 91.44) (xy 223.52 91.44)
 		)
 		(stroke
@@ -1753,7 +1773,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 110.49) (xy 46.99 115.57)
+			(xy 35.56 110.49) (xy 35.56 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1810,6 +1830,16 @@
 			(type default)
 		)
 		(uuid "966f80e2-112f-4a5c-a99a-5ea4cf415c1d")
+	)
+	(wire
+		(pts
+			(xy 52.07 101.6) (xy 59.69 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c01f8e1-1234-4b53-8442-688c61d9666b")
 	)
 	(wire
 		(pts
@@ -1883,7 +1913,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 96.52) (xy 59.69 96.52)
+			(xy 35.56 96.52) (xy 59.69 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1900,6 +1930,16 @@
 			(justify left bottom)
 		)
 		(uuid "1f6ad3ec-6fcf-4087-953e-f2f0f6b0f948")
+	)
+	(label "FSYNC"
+		(at 52.07 101.6 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "2081d44a-4693-4164-939d-6e2dbf888c44")
 	)
 	(label "CS"
 		(at 238.76 114.3 180)
@@ -1981,8 +2021,18 @@
 		)
 		(uuid "8a36897d-9f15-4a6f-bbb8-ee982e5498bd")
 	)
+	(label "FSYNC"
+		(at 238.76 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a8d336d-7214-4795-8c50-26a78a3e02a9")
+	)
 	(label "3V3_Clean"
-		(at 41.91 96.52 180)
+		(at 30.48 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2540,7 +2590,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 46.99 115.57 0)
+		(at 35.56 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2549,7 +2599,7 @@
 		(fields_autoplaced yes)
 		(uuid "563c22da-f9e3-4d84-b9a0-fcfb1afdc02d")
 		(property "Reference" "#PWR018"
-			(at 46.99 121.92 0)
+			(at 35.56 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2558,7 +2608,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 120.65 0)
+			(at 35.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2567,7 +2617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 115.57 0)
+			(at 35.56 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2576,7 +2626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 115.57 0)
+			(at 35.56 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2585,7 +2635,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 46.99 115.57 0)
+			(at 35.56 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2667,6 +2717,74 @@
 			(project "ICM-42688-P Breakout Board"
 				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 43.18 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "606f9928-d4bd-4dea-aa27-30480d5c76c7")
+		(property "Reference" "#PWR05"
+			(at 36.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 101.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a50616c-ba36-4f93-9bcc-d9e03fdfff9b")
+		)
+		(instances
+			(project "ICM-42670-P Breakout Board"
+				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3121,35 +3239,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 46.99 106.68 0)
+		(lib_id "Device:R")
+		(at 48.26 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3b1f4cb-3296-46e0-b681-a7088038c83f")
-		(property "Reference" "C3"
-			(at 50.8 105.4099 0)
+		(uuid "b0de3fec-d784-470d-aa86-5e3fc52c5894")
+		(property "Reference" "R4"
+			(at 48.26 98.298 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10 nF"
-			(at 50.8 107.9499 0)
+		(property "Value" "10 kΩ"
+			(at 48.26 99.568 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 47.9552 110.49 0)
+			(at 48.26 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +3273,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 106.68 0)
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe946aff-85e8-444e-9b1f-22523644e02f")
+		)
+		(pin "1"
+			(uuid "9e8cbb0b-d3e1-480b-a680-4de1e56f1ff9")
+		)
+		(instances
+			(project "ICM-42670-P Breakout Board"
+				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 35.56 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3b1f4cb-3296-46e0-b681-a7088038c83f")
+		(property "Reference" "C3"
+			(at 39.37 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 nF"
+			(at 39.37 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.5252 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +3352,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 46.99 106.68 0)
+			(at 35.56 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
