@@ -1650,6 +1650,12 @@
 		(uuid "c45f8bf7-7aab-4937-afae-0669323241dc")
 	)
 	(junction
+		(at 53.34 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d392e7fe-f6d4-4dcd-ae8f-00d2eda72f62")
+	)
+	(junction
 		(at 231.14 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1969,13 +1975,13 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 101.6) (xy 59.69 101.6)
+			(xy 53.34 106.68) (xy 53.34 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c01f8e1-1234-4b53-8442-688c61d9666b")
+		(uuid "9f02b25d-8dc6-440d-84f9-4fc339b89cf3")
 	)
 	(wire
 		(pts
@@ -1996,16 +2002,6 @@
 			(type default)
 		)
 		(uuid "b65a905a-db24-46bd-a3a5-8756f29ef51c")
-	)
-	(wire
-		(pts
-			(xy 166.37 99.06) (xy 167.64 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7de2f4a-8b21-42f7-861b-428e800898da")
 	)
 	(wire
 		(pts
@@ -2056,6 +2052,26 @@
 			(type default)
 		)
 		(uuid "efcdfd6c-d4ed-4c1a-9557-6b672ed2c322")
+	)
+	(wire
+		(pts
+			(xy 53.34 101.6) (xy 52.07 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdcec13f-f29d-473e-934e-1e04adf32c48")
+	)
+	(wire
+		(pts
+			(xy 53.34 101.6) (xy 59.69 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed1b941-6135-4074-89eb-045308397f0b")
 	)
 	(image
 		(at 184.15 173.99)
@@ -7497,7 +7513,7 @@
 		(uuid "1f6ad3ec-6fcf-4087-953e-f2f0f6b0f948")
 	)
 	(label "FSYNC"
-		(at 52.07 101.6 0)
+		(at 53.34 106.68 0)
 		(effects
 			(font
 				(size 1.143 1.143)
@@ -8106,74 +8122,6 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 167.64 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48956738-777d-44d3-a87c-a9909babf18c")
-		(property "Reference" "#PWR014"
-			(at 173.99 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.45 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 167.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 167.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "315b8dfc-4a08-4c8b-a681-968217c8c0e7")
-		)
-		(instances
-			(project ""
-				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
 		(at 35.56 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8772,7 +8720,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0de3fec-d784-470d-aa86-5e3fc52c5894")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 48.26 98.298 90)
 			(effects
 				(font
@@ -8833,7 +8781,7 @@
 		(instances
 			(project "ICM-42670-P Breakout Board"
 				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8982,82 +8930,6 @@
 			(project "ICM-42670-P Breakout Board"
 				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 162.56 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ccebc55c-1e45-4282-8ebc-0f4e67623724")
-		(property "Reference" "R3"
-			(at 160.782 105.156 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10 kΩ"
-			(at 160.782 103.124 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 162.56 100.838 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 162.56 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 162.56 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "±1% 0.0625 W (1/16 W)"
-			(at 162.56 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6275c66e-0bc8-4d26-b514-8d232c90e4b6")
-		)
-		(pin "1"
-			(uuid "e7b3ef55-da65-4339-b5ee-1292846449ec")
-		)
-		(instances
-			(project "ICM-42688-P Breakout Board"
-				(path "/46f757aa-f0ff-4bf0-8e74-16936fa9d7c2"
-					(reference "R3")
 					(unit 1)
 				)
 			)
