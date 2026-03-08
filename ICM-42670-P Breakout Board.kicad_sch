@@ -8058,6 +8058,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "KT-0603R"
+			(at 210.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4dfb8816-44a7-44a9-a971-902d0a7e4c3c")
 		)
