@@ -3,5 +3,5 @@ ICM-42670-P BREAKOUT BOARD [Datasheet](https://invensense.tdk.com/wp-content/upl
 
 
 # <img width="2364" height="1290" alt="ICM-42670-P Breakout Board_Panel" src="https://github.com/user-attachments/assets/ede24112-1830-45c7-837b-959b381cd149" />
-![ICM-42670-P Breakout Board](https://github.com/user-attachments/assets/d78eaa6e-dcd6-429d-a68c-ba6f6493eb5f)
 
+<img width="3750" height="1500" alt="image" src="https://github.com/user-attachments/assets/c4b199e6-dda1-4422-916a-624fb88f1b3e" />
