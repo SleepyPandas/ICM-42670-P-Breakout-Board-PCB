@@ -8058,7 +8058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "KT-0603R"
+		(property "JLCPCB Part #" "C2290"
 			(at 210.82 62.23 0)
 			(effects
 				(font
@@ -8271,6 +8271,15 @@
 			)
 		)
 		(property "Specification" "±1% 0.0625 W (1/16 W)"
+			(at 168.91 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C328298"
 			(at 168.91 91.44 90)
 			(effects
 				(font
@@ -8752,8 +8761,17 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "X7R, 2.2 µF ±10% 16V"
+		(property "Specification" "X7R, 2.2 µF ±20% 6.3V"
 			(at 199.39 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C12530"
+			(at 199.39 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8889,6 +8907,15 @@
 			)
 		)
 		(property "Description" "250mA Low Quiscent Current LDO, 3.3V output, SOT-23"
+			(at 213.36 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C39051"
 			(at 213.36 101.6 0)
 			(effects
 				(font
@@ -9037,6 +9064,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C3288646"
+			(at 59.69 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a955df2-5998-4d90-b622-91e8147a0c2c")
 		)
@@ -9149,6 +9185,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C328298"
+			(at 48.26 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fe946aff-85e8-444e-9b1f-22523644e02f")
 		)
@@ -9211,6 +9256,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 35.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C15195"
 			(at 35.56 106.68 0)
 			(effects
 				(font
@@ -9288,8 +9342,17 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "X7R, 2.2 µF ±10% 16V"
+		(property "Specification" "X7R, 2.2 µF ±20% 6.3V"
 			(at 227.33 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C12530"
+			(at 227.33 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9367,6 +9430,15 @@
 			)
 		)
 		(property "Specification" "X7R, 0.1 µF ±10% >= 16V"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C1525"
 			(at 165.1 107.95 0)
 			(effects
 				(font
@@ -9508,6 +9580,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C352482"
+			(at 220.98 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "±1% 0.0625 W (1/16 W)"
+			(at 220.98 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "744d01a6-cbb9-4cb2-8921-11a21b4ab003")
 		)
@@ -9578,7 +9668,16 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "X7R, 2.2 µF ±10% 16V"
+		(property "Specification" "X7R, 2.2 µF ±20% 6.3V"
+			(at 179.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C12530"
 			(at 179.07 107.95 0)
 			(effects
 				(font
