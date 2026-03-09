@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>A compact, breadboard-friendly breakout for the TDK InvenSense ICM-42670-P 6-axis IMU</strong><br/>
-  Designed in KiCad 9.0 · Rev v1.0 · By Anthony Hua
+  Designed in KiCad 9.0 · Rev v1.0 · By ME! SleepyPandas / Anthony
 </p>
 
 <p align="center">
