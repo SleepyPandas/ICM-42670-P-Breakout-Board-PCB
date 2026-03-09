@@ -28,7 +28,7 @@
     <td align="center" width="30%"><strong>PCB Layout</strong></td>
   </tr>
   <tr>
-    <td valign="middle"><img src="https://github.com/user-attachments/assets/85d546ef-759b-444b-80ad-1cf963efb681" alt="3D Render" width="100%"/></td>
+    <td valign="middle"><img src="https://github.com/user-attachments/assets/c2cd51ff-392e-49f3-959b-0bfe0f817682" alt="3D Render" width="100%"/></td>
     <td valign="middle"><img src="https://github.com/user-attachments/assets/8c48232a-c1b9-4a7c-9a8a-062dbc10d8d4" alt="PCB Layout" width="100%"/></td>
   </tr>
   <tr>
@@ -40,6 +40,7 @@
 </table>
 
 ---
+
 
 ## Features
 
