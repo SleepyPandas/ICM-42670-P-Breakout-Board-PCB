@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Layers-2%20Layer%20PCB-orange?style=flat-round" alt="Layers"/>
   <img src="https://img.shields.io/badge/Interface-I2C%20%7C%20SPI%20%7C%20I3C-6A0DAD?style=flat-round" alt="Interface"/>
   <img src="https://img.shields.io/badge/IMU-6--Axis%20%7C%20Accel%20%2B%20Gyro-00897B?style=flat-round" alt="IMU"/>
-  <img src="https://img.shields.io/badge/Rev-v1.0-lightgrey?style=flat-round" alt="Rev"/>
+  <img src="https://img.shields.io/badge/Rev-v1.2-lightgrey?style=flat-round" alt="Rev"/>
 </p>
 
 ---
@@ -28,14 +28,17 @@
     <td align="center" width="30%"><strong>PCB Layout</strong></td>
   </tr>
   <tr>
-    <td valign="middle"><img src="https://github.com/user-attachments/assets/c2cd51ff-392e-49f3-959b-0bfe0f817682" alt="3D Render" width="100%"/></td>
-    <td valign="middle"><img src="https://github.com/user-attachments/assets/8c48232a-c1b9-4a7c-9a8a-062dbc10d8d4" alt="PCB Layout" width="100%"/></td>
+    <td valign="middle"><img src="https://github.com/user-attachments/assets/f7fc2b81-b836-471d-9576-5a9c19fd43dd" alt="3D Render" width="100%"/></td>
+    <td valign="middle"><img src="https://github.com/user-attachments/assets/2a0c2575-5125-44e0-b663-1f8e5a558fe3" alt="PCB Layout" width="100%"/></td>
+
   </tr>
   <tr>
     <td align="center" colspan="2"><strong>Schematic</strong></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="https://github.com/user-attachments/assets/ed923745-42ba-4d4a-8860-3aadc7fda16a" alt="Schematic" width="100%"/></td>
+    <td colspan="2"><img src="https://github.com/user-attachments/assets/b72cf158-86df-48ce-8643-bb2742c0bcad" alt="Schematic" width="100%"/></td>
+
+
   </tr>
 </table>
 
