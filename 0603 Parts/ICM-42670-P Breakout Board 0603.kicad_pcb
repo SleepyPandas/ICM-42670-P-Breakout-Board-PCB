@@ -1334,6 +1334,17 @@
 			(uuid "f9406f96-f5dd-4f95-839d-40a9332dde64")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/AnthonyPC/Documents/GitHub KiCAD/Part Library + Footprints/ul_ICM-42670-P/LGA14_2_5X3X0_76_IVS.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -2334,6 +2345,7 @@
 		(property "Reference" "R4"
 			(at 0 -1.75 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "83fa592a-8cb8-4b8e-9c0c-07a12b5b41c6")
 			(effects
 				(font
@@ -2519,6 +2531,7 @@
 		(property "Reference" "R5"
 			(at 0.5 -1.5 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "3c8f5c43-9dd1-4756-b677-97acc639bf06")
 			(effects
 				(font
