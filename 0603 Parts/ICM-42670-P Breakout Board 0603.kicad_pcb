@@ -9,8 +9,8 @@
 	(paper "User" 132 100)
 	(title_block
 		(title "PCB Layout ICM-42670-P")
-		(date "2026-MARCH-08")
-		(rev "V1.0")
+		(date "2026-MARCH-26")
+		(rev "V1.2")
 	)
 	(layers
 		(0 "F.Cu" signal)
