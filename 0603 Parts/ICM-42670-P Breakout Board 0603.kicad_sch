@@ -6,7 +6,7 @@
 	(paper "User" 254 127)
 	(title_block
 		(title "ICM-42670-P Motion Sensor Breakout with Power Regulation")
-		(date "2026-MARCH-07")
+		(date "2026-March-26")
 		(rev "v1.2")
 		(company "Anthony Hua / SleepPandas")
 	)
@@ -1953,6 +1953,28 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 177.8 17.78)
+		(end 224.79 31.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "73e1fc16-935d-4ec5-b3d2-4d2a0e63c408")
+	)
+	(text "LED Power Indicator"
+		(exclude_from_sim no)
+		(at 202.184 15.748 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4926ab40-638b-49d7-bd51-d5b253829c1c")
 	)
 	(junction
 		(at 224.79 58.42)
