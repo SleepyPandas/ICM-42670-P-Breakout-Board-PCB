@@ -6,17 +6,26 @@
 
 <p align="center">
   <strong>A compact, breadboard-friendly breakout for the TDK InvenSense ICM-42670-P 6-axis IMU</strong><br/>
-  Designed in KiCad 9.0 · Rev v1.0 · By ME! SleepyPandas / Anthony
+  Designed in KiCad 10.0 · Rev v1.2 · By ME! SleepyPandas / Anthony
 </p>
 
 <p align="center">
   <a href="https://invensense.tdk.com/wp-content/uploads/2021/07/DS-000451-ICM-42670-P-v1.0.pdf"><img src="https://img.shields.io/badge/Datasheet-ICM--42670--P-0078D4?style=flat-round&logo=bookstack&logoColor=white" alt="Datasheet"/></a>
-  <img src="https://img.shields.io/badge/EDA-KiCad%209.0-314CB0?style=flat-round&logo=kicad&logoColor=white" alt="KiCad"/>
+  <img src="https://img.shields.io/badge/EDA-KiCad%2010.0-314CB0?style=flat-round&logo=kicad&logoColor=white" alt="KiCad"/>
   <img src="https://img.shields.io/badge/Layers-2%20Layer%20PCB-orange?style=flat-round" alt="Layers"/>
   <img src="https://img.shields.io/badge/Interface-I2C%20%7C%20SPI%20%7C%20I3C-6A0DAD?style=flat-round" alt="Interface"/>
   <img src="https://img.shields.io/badge/IMU-6--Axis%20%7C%20Accel%20%2B%20Gyro-00897B?style=flat-round" alt="IMU"/>
   <img src="https://img.shields.io/badge/Rev-v1.2-lightgrey?style=flat-round" alt="Rev"/>
 </p>
+
+---
+
+## Revision Notes (v1.2)
+
+- Primary project update is now the **0603 parts variant** (easier hand assembly than 0402 passives)
+- Passive footprints moved to **0603** across the v1.2 schematic/PCB
+- Dedicated v1.2 manufacturing outputs are included in `0603 Parts/production/` (BOM, positions, designators, IPC netlist)
+- Project/schematic revision fields updated to **v1.2** in the 0603 KiCad project
 
 ---
 
@@ -50,9 +59,10 @@
 | Feature | Detail |
 |:---|:---|
 | **IMU** | ICM-42670-P, 6-axis (3-axis accel + 3-axis gyro), LGA-14 package |
-| **Power** | On-board **MCP1700-3.3V** LDO regulator (SOT-23), accepts up to 6V input |
-| **Interfaces** | I²C (default) & SPI, directly broken out to 0.1″ header pins |
+| **Power** | On-board **MCP1700x** LDO regulator (SOT-23), accepts up to 6V input |
+| **Interfaces** | I²C / I3C / SPI, directly broken out to 0.1″ header pins with on-board I²C pull-ups |
 | **Signals** | VCC · GND · CS · INT2 · SCL · SDA · SDO · INT1 · FSYNC |
+| **Assembly** | v1.2 updates passives to **0603** package sizing |
 | **Indicator** | Power LED with 120Ω current-limiting resistor |
 | **Form Factor** | Breadboard-friendly with standard 2.54mm pitch headers |
 
@@ -85,9 +95,15 @@
 ## Circuit Design Highlights
 
 ### Power Regulation
-- **MCP1700-3.3V** LDO provides clean, stable 3.3V from a wide input range
+- **MCP1700x** LDO provides a clean regulated rail from a wide input range
+- **3.3V rail target** using MCP1700x-330xxTT is maintained at the board's expected low load current
 - **2.2µF** input & output capacitors (C4, C5) for LDO stability, Microchip's datasheet recommends >= to 1µF but for simplicity we use the same 2.2µF used in other parts of the circuit. 
 - Power LED (D1) with **120Ω** series resistor for visual power indication
+
+### Assembly/Footprint Update (v1.2)
+
+- Passives are standardized to **0603** packages in the v1.2 project for easier hand soldering
+- Sensor and regulator footprints remain compact: **LGA-14** (U1) and **SOT-23** (U3)
 
 ### Decoupling Strategy
 
@@ -99,12 +115,14 @@
 > **Layout note:** Decoupling caps are placed as close to the ICM-42670-P power pins as physically possible to minimize parasitic loop inductance (i.e where the trace is the limiting factor for power not the capacitor) Leading to unexpected behavior for sensitive IMUs.
 
 ### Interface Configuration
-- **CS -> 10kΩ pull-up to VDD**, boots into I²C mode by default
-- **SDO/AD0 -> 10kΩ pull-down to GND**, sets I²C address to `0x68`
+- **SDA -> 10kΩ pull-up to 3V3_Clean** for I²C/I3C bus idle-high behavior
+- **SCL -> 10kΩ pull-up to 3V3_Clean** for I²C/I3C clock line idle-high behavior
+- **CS -> 10kΩ pull-up to VDDIO**, boots into I²C/I3C mode by default
 - **FSYNC -> 10kΩ pull-down to GND**, disables frame sync when not driven
+- **SDO/AD0 -> direct breakout (no fixed pull resistor)** for maximum SPI flexibility
 
 > [!NOTE] 
-> **Note:** No I²C pull-ups are included on-board to prevent interfering with SPI.
+> **Note:** The I²C pull-ups are on SDA/SCL only; this keeps I²C and I3C ready out-of-the-box while avoiding direct loading on SPI MISO paths.
 
 
 ---
@@ -114,12 +132,12 @@
 | Ref | Value | Specification | Package / FootPrint | Description | Qty |
 |:---:|:---:|:---:|:---:|:---|:---:|
 | U1 | ICM-42670-P | - | LGA-14 (2.5x3mm) | 6-axis IMU (accel + gyro) | 1 |
-| U2 | MCP1700-330 | 250mA, 178mV dropout | SOT-23 | 3.3V LDO voltage regulator | 1 |
-| C1 | 100nF | X7R, ±10%, 16V | 0402 | VDD high-freq bypass | 1 |
-| C2, C4, C5 | 2.2µF | X7R, ±10%, 16V | 0402 | VDD bulk / LDO I/O caps | 3 |
-| C3 | 10nF | X7R, ±10%, 50V | 0402 | VDDIO bypass | 1 |
-| R1, R2 | 10kΩ | ±1%, 50V | 0402 | CS pull-up / AD0 pull-down | 2 |
-| R3 | 120Ω | ±1%, 50V | 0402 | LED current limiter | 1 |
+| U3 | MCP1700x-330xxTT | 250mA LDO, SOT-23 | SOT-23 | Regulated 3.3V supply rail | 1 |
+| C1 | 100nF | X7R, ±10%, 16V | 0603 | VDD high-freq bypass | 1 |
+| C2, C4, C5 | 2.2µF | X7R, ±10%, 16V | 0603 | VDD bulk / LDO I/O caps | 3 |
+| C3 | 10nF | X7R, ±10%, 50V | 0603 | VDDIO bypass | 1 |
+| R1, R2, R4, R5 | 10kΩ | ±1%, 50V | 0603 | CS pull-up / FSYNC pull-down / SDA & SCL pull-ups | 4 |
+| R3 | 120Ω | ±1%, 50V | 0603 | LED current limiter | 1 |
 | D1 | LED | - | 0603 | Power indicator | 1 |
 | J2 | N/A | - | 2.54mm header | 9-pin breakout connector | 1 |
 
@@ -129,26 +147,27 @@
 
 ---
 
-**1. No On-Board I2C Pull-ups**
+**1. On-Board I2C Pull-ups Added (R4, R5)**
 
-I2C pull-ups are required since I2C is an open-drain communication protocol, without them the bus lines cannot be pulled HIGH. If pull-ups were included, users running SPI or I3C would have permanent resistive loads on the SDA/SCL lines. In SPI mode this causes unnecessary current draw and can degrade signal integrity by, slowing the rising edge and reducing achievable clock speeds. Leaving pull-ups off the breakout lets the user provide them based on implementation. However I3C is supposedly backwards compatible with I2C so there shouldn't be a major issue the main concern is with SPI.
+I2C pull-ups are required because I2C uses open-drain signaling and the bus needs passive pull-up resistors to reach logic HIGH. In this revision, dedicated **10kΩ pull-ups were added on SDA and SCL** so the board is immediately usable in I2C and I3C-style wiring. This keeps the breakout more plug-and-play while still preserving speed-focused SPI behavior, since the pull-ups are only on SDA/SCL and not on the SPI data output path.
 
 ---
 
 **2. LDO (Low-Dropout Regulator) vs. No Regulator**
 
-The ICM-42670-P officially supports 1.71–3.6V DC directly, so a regulator is not strictly required.But I included the MCP1700-3.3V LDO for two reasons:
+The ICM-42670-P officially supports 1.71–3.6V DC directly, so a regulator is not strictly required. But I included an MCP1700x LDO and selected a **3.3V output variant (MCP1700x-330xxTT)** for two reasons:
 
-1. Most common dev boards (ESP32, Arduino, STM32) operate from 5V USB power rails. The [MCP1700 accepts 2.3-6.0V](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf) input and regulates it to a clean 3.3V, making this breakout plug-and-play with virtually any platform.
-2. The ICM-42670-P contains sensitive MEMS structures (accelerometer and gyroscope masses). Thus it is a much more sensitive IMU to noise. The LDO provides a low-noise, regulated supply, reducing the risk of noise being misinterpreted as motion data or producing unexpected behavior. The MCP1700's 178mV dropout also ensures it stays in regulation even as supply voltage drops.
+1. Most common dev boards (ESP32, Arduino, STM32) operate from 5V USB power rails. The [MCP1700 accepts 2.3-6.0V](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf) input and provides a clean regulated rail, making this breakout plug-and-play with virtually any platform.
+2. The ICM-42670-P contains sensitive MEMS structures (accelerometer and gyroscope masses). The LDO provides a low-noise regulated rail, reducing supply-noise-induced measurement error. With expected draw of roughly **0.65mA (IMU) + ~3mA (power LED) ≈ 3.65mA total**, the 3.3V LDO is operating at a very light load and still provides a approximately 3.3V output with a 3.3V input however will not provide the noise reduction benefits at that voltage only 5V.
 
+> 
 ---
 
-**3. SDO/AD0 Pull-Down**
+**3. SDO/AD0 Configuration for Speed Flexibility**
 
-Usually, SDO / AD0 is pulled down via a 10kΩ resistor to GND, which fixes the I2C/I3C slave address LSB to setting the device address to `0x69`. Which ensures there is no flip flopping between memory addresses for I2C however.
+In this revision, **SDO/AD0 is left without a fixed pull resistor** so the line can be defined by the host design. For I2C/I3C use, address selection can still be handled externally as needed.
 
-In SPI mode, SDO becomes the MISO line. The 10kΩ pull-down slows the rising edge of the SDO signal. At high SPI clock speeds this can limit achievable data rates and cause some data corruption. Thus it will be user defined.
+In SPI mode, SDO becomes the MISO line. Avoiding a permanent pull resistor helps preserve edge rate and signal integrity at higher SPI clock speeds.
 
 ---
 
@@ -160,7 +179,7 @@ Capacitors C1 (100nF) and C2 (2.2µF) are placed as close as physically possible
 
 **5. Chip Select (CS) Pull-Up**
 
-CS is pulled HIGH via a 10kΩ resistor to VDDIO by default. This ensures the ICM-42670-P boots into I2C/I3C mode rather than SPI mode or leaving it which may cause it to switch beteen SPI and I2C/I3C. Users wishing to use SPI simply drive CS LOW from their microcontroller, the pull-up is easily overridden and does not conflict with normal SPI operation.
+CS is pulled HIGH via a 10kΩ resistor to VDDIO by default. This ensures the ICM-42670-P boots into I2C/I3C mode rather than entering an undefined mode at startup. Users wishing to use SPI simply drive CS LOW from the microcontroller; the pull-up is weak enough to be overridden during normal SPI operation.
 
 
 ---
@@ -169,12 +188,33 @@ CS is pulled HIGH via a 10kΩ resistor to VDDIO by default. This ensures the ICM
 
 ```
 ICM-42670-P Breakout Board
-├──  ICM-42670-P Breakout Board.kicad_sch    # Schematic source
-├──  ICM-42670-P Breakout Board.kicad_pcb    # PCB layout source
-├──  ICM-42670-P Breakout Board.kicad_pro    # KiCad project file
-├──  production/                              # Fabrication outputs (Gerbers, BOM, positions)
-├──  PCB PANEL Production/                    # Panelized PCB for batch manufacturing
-├──  Models Photos PDFS/                      # Renders, schematics exports, documentation
+├──  Draw.kicad_wks                            # Custom KiCad worksheet
+├──  PersonalNotes.md                          # Project notes
+├──  Models Photos PDFS/                       # Renders, schematics exports, documentation
+├──  production/                               # Top-level fabrication outputs
+│   ├── bom.csv
+│   ├── designators.csv
+│   ├── netlist.ipc
+│   ├── positions.csv
+│   └── backups/
+├──  Schematic PCB Design/                     # Active v1.2 (0603) design files
+│   ├── ICM-42670-P Breakout Board 0603.kicad_sch
+│   ├── ICM-42670-P Breakout Board 0603.kicad_pcb
+│   ├── ICM-42670-P Breakout Board 0603.kicad_pro
+│   ├── ICM-42670-P Breakout Board 0603.csv
+│   ├── production/                            # v1.2 fabrication outputs
+│   │   ├── bom.csv
+│   │   ├── designators.csv
+│   │   ├── netlist.ipc
+│   │   ├── positions.csv
+│   │   └── backups/
+│   └── ICM-42670-P Breakout Board 0603-backups/
+├──  V1 Old 0402 Design/                       # Legacy 0402 design archive
+│   ├── ICM-42670-P Breakout Board.kicad_sch
+│   ├── ICM-42670-P Breakout Board.kicad_pcb
+│   ├── ICM-42670-P Breakout Board.kicad_pro
+│   └── PCB PANEL Production/                  # Panelized legacy production design
+├──  ICM-42670-P Breakout Board-backups/
 └──  README.md
 ```
 
@@ -182,7 +222,7 @@ ICM-42670-P Breakout Board
 
 ## Tools Used
 
-- **[KiCad 9.0](https://www.kicad.org/)**, Schematic & PCB layout
+- **[KiCad 10.0](https://www.kicad.org/)**, Schematic & PCB layout
 - **JLCPCB**, PCBA service
 - **OSH Park**, PCB Fabrication (Really cheap 3$ for 3 Boards)
 - Shoutout to Altium Designer... Costs an arm and a leg
