@@ -1,4 +1,6 @@
 # Temporary files
+.history/
+**/.history/
 *.000
 *.bak
 *.bck
@@ -31,5 +33,9 @@ fp-info-cache
 
 # Archived Backups (KiCad 6.0+)
 **/*-backups/*.zip
+
+# User/local KiCad state
+*.kicad_prl
+*.wbk
 
 PersonalNotes.md
