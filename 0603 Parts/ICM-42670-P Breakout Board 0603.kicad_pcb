@@ -4190,6 +4190,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "FSYNC"
+		(at 60.25 46.75 0)
+		(layer "F.SilkS")
+		(uuid "1eaa2646-da93-4169-b696-3c72d6314e36")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "VCC"
 		(at 60.27 26.488522 0)
 		(layer "F.SilkS")
@@ -4278,18 +4290,6 @@
 		(at 60.3 44.1 0)
 		(layer "F.SilkS")
 		(uuid "a081ad0a-5bbd-454a-b12e-7b1d471fcd5f")
-		(effects
-			(font
-				(size 0.85 0.85)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "FSYNC"
-		(at 61.55 46.8 0)
-		(layer "F.SilkS")
-		(uuid "1eaa2646-da93-4169-b696-3c72d6314e36")
 		(effects
 			(font
 				(size 0.85 0.85)
