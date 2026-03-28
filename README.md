@@ -161,9 +161,9 @@ The ICM-42670-P officially supports 1.71–3.6V DC directly, so a regulator is n
 2. The ICM-42670-P contains sensitive MEMS structures (accelerometer and gyroscope masses). The LDO provides a low-noise regulated rail, reducing supply-noise-induced measurement error. With expected draw of roughly **0.65mA (IMU) + ~3mA (power LED) ≈ 3.65mA total**, the 3.3V LDO is operating at a very light load and still provides a approximately 3.3V output with a 3.3V input however will not provide the noise reduction benefits at that voltage only 5V.
 
 <p align="center">
-  <img width="40%" alt="Load vs Dropout Voltage 5V" src="https://github.com/user-attachments/assets/302a4a32-f03d-4c58-ad68-5d00fbecf10c" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="40%" alt="Load vs Dropout Voltage 2.8V" src="https://github.com/user-attachments/assets/88e85129-4c84-4228-a25e-46bbcff06a3f" />
+  <img width="49%" alt="Load vs Dropout Voltage 5V" src="https://github.com/user-attachments/assets/302a4a32-f03d-4c58-ad68-5d00fbecf10c" />
+
+  <img width="49%" alt="Load vs Dropout Voltage 2.8V" src="https://github.com/user-attachments/assets/88e85129-4c84-4228-a25e-46bbcff06a3f" />
 </p>
 
 ---
