@@ -2204,16 +2204,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 71.12) (xy 224.79 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fd06c13-699d-41ca-8cb5-2a5f50eafa97")
-	)
-	(wire
-		(pts
 			(xy 204.47 58.42) (xy 214.63 58.42)
 		)
 		(stroke
@@ -2271,6 +2261,16 @@
 			(type default)
 		)
 		(uuid "738514ef-25c5-4af9-a668-b58a676df05b")
+	)
+	(wire
+		(pts
+			(xy 222.25 63.5) (xy 224.79 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc276d9-f90e-45fd-8848-7b4f60733948")
 	)
 	(wire
 		(pts
@@ -2374,6 +2374,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 68.58) (xy 224.79 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7230962-b9e1-459c-9ac4-94178c366804")
+	)
+	(wire
+		(pts
 			(xy 177.8 58.42) (xy 182.88 58.42)
 		)
 		(stroke
@@ -2394,16 +2404,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 63.5) (xy 224.79 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb5fa227-6b38-425e-854d-707afde06b45")
-	)
-	(wire
-		(pts
 			(xy 185.42 26.67) (xy 187.96 26.67)
 		)
 		(stroke
@@ -2420,7 +2420,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d246f5ed-1e29-4d76-ba9b-d86b41112b7e")
+		(uuid "c7e137c4-6aba-4730-932d-dcd79510c3d9")
 	)
 	(wire
 		(pts
@@ -2474,6 +2474,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 71.12) (xy 224.79 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67d5418-85ec-4d00-8517-f42140bd3912")
+	)
+	(wire
+		(pts
 			(xy 34.29 53.34) (xy 58.42 53.34)
 		)
 		(stroke
@@ -2491,16 +2501,6 @@
 			(type default)
 		)
 		(uuid "f51a83bc-ffa5-4ee8-a79f-4a3688ca3f2e")
-	)
-	(wire
-		(pts
-			(xy 222.25 68.58) (xy 224.79 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9a235bb-5550-41e2-91e2-5937417ec8af")
 	)
 	(wire
 		(pts
@@ -7952,7 +7952,7 @@
 		(uuid "2081d44a-4693-4164-939d-6e2dbf888c44")
 	)
 	(label "CS"
-		(at 222.25 71.12 180)
+		(at 222.25 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8012,7 +8012,7 @@
 		(uuid "66f37881-ecad-4774-9561-c38374015cf6")
 	)
 	(label "SDO"
-		(at 222.25 68.58 180)
+		(at 222.25 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8022,7 +8022,7 @@
 		(uuid "76d4219d-5b80-4774-be70-b71f7d9ab983")
 	)
 	(label "SDA"
-		(at 222.25 66.04 180)
+		(at 222.25 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8042,7 +8042,7 @@
 		(uuid "7e0ed8a7-21e2-4eb4-9db7-c81c289b24ce")
 	)
 	(label "SCL"
-		(at 222.25 63.5 180)
+		(at 222.25 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
