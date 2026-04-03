@@ -524,7 +524,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "ICM-42670-P Breakout Board 0603.net",
-      "plot": "",
+      "plot": "production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
