@@ -6,8 +6,8 @@
 	(paper "User" 254 127)
 	(title_block
 		(title "ICM-42670-P Motion Sensor Breakout with Power Regulation")
-		(date "2026-March-26")
-		(rev "v1.2")
+		(date "2026-April-02")
+		(rev "v1.3")
 		(company "Anthony Hua / SleepPandas")
 	)
 	(lib_symbols
@@ -8569,7 +8569,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C328298"
+		(property "JLCPCB Part #" "C25804"
 			(at 167.64 48.26 90)
 			(hide yes)
 			(show_name no)
@@ -9249,7 +9249,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C328298"
+		(property "JLCPCB Part #" "C25804"
 			(at 167.64 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -9513,7 +9513,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C328298"
+		(property "JLCPCB Part #" "C25804"
 			(at 167.64 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -9822,7 +9822,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C328298"
+		(property "JLCPCB Part #" "C25804"
 			(at 46.99 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -10257,7 +10257,7 @@
 				)
 			)
 		)
-		(property "Value" "120Ω"
+		(property "Value" "150 Ω"
 			(at 201.93 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10300,7 +10300,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C352482"
+		(property "JLCPCB Part #" "C22808"
 			(at 201.93 26.67 90)
 			(hide yes)
 			(show_name no)
