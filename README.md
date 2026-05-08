@@ -37,15 +37,15 @@
     <td align="center" width="30%"><strong>PCB Layout</strong></td>
   </tr>
   <tr>
-    <td valign="middle"><img src="https://github.com/user-attachments/assets/f7fc2b81-b836-471d-9576-5a9c19fd43dd" alt="3D Render" width="100%"/></td>
-    <td valign="middle"><img src="https://github.com/user-attachments/assets/2a0c2575-5125-44e0-b663-1f8e5a558fe3" alt="PCB Layout" width="100%"/></td>
+    <td valign="middle"><img src="https://github.com/user-attachments/assets/70ebc165-9789-458b-acc1-ed9eb6a9fbef" alt="3D Render" width="100%"/></td>
+    <td valign="middle"><img src="https://github.com/user-attachments/assets/4affdd65-6319-4b5b-a04d-9ff2a4f81e8f" alt="PCB Layout" width="100%"/></td>
 
   </tr>
   <tr>
     <td align="center" colspan="2"><strong>Schematic</strong></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="https://github.com/user-attachments/assets/b72cf158-86df-48ce-8643-bb2742c0bcad" alt="Schematic" width="100%"/></td>
+    <td colspan="2"><img src="https://github.com/user-attachments/assets/2c3e6d40-2e6e-4aa9-a850-b450ec5c1d03" alt="Schematic" width="100%"/></td>
   </tr>
 
   <tr>
