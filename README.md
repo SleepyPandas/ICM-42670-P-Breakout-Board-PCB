@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>A compact, breadboard-friendly breakout for the TDK InvenSense ICM-42670-P 6-axis IMU</strong><br/>
-  Designed in KiCad 10.0 · Rev v1.2 · By ME! SleepyPandas / Anthony
+  Designed in KiCad 10.0 · Rev v1.4 · By ME! SleepyPandas / Anthony
 </p>
 
 <p align="center">
@@ -15,10 +15,13 @@
   <img src="https://img.shields.io/badge/Layers-2%20Layer%20PCB-orange?style=flat-round" alt="Layers"/>
   <img src="https://img.shields.io/badge/Interface-I2C%20%7C%20SPI%20%7C%20I3C-6A0DAD?style=flat-round" alt="Interface"/>
   <img src="https://img.shields.io/badge/IMU-6--Axis%20%7C%20Accel%20%2B%20Gyro-00897B?style=flat-round" alt="IMU"/>
-  <img src="https://img.shields.io/badge/Rev-v1.2-lightgrey?style=flat-round" alt="Rev"/>
+  <img src="https://img.shields.io/badge/Rev-v1.4-lightgrey?style=flat-round" alt="Rev"/>
 </p>
 
 ---
+
+## Revision notes for v1.3 , v1.4 
+Has to do with component selection for DFM and Cleaning up Traces (no Major Functional Changes) 
 
 ## Revision Notes (v1.2)
 
