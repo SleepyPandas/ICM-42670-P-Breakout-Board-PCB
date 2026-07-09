@@ -6,8 +6,13 @@
 
 <p align="center">
   <strong>A compact, breadboard-friendly breakout for the TDK InvenSense ICM-42670-P 6-axis IMU</strong><br/>
-  Designed in KiCad 10.0 · Rev v1.4 · By ME! SleepyPandas / Anthony
+  Designed in KiCad 10.0 · Rev v1.4 · By ME! SleepyPandas / Anthony 
+  <br>
+  <br>
+  <a href="https://github.com/SleepyPandas/ICM42670_Driver_STM32_ESP32"><img src="https://img.shields.io/badge/Driver_Code-ICM--42670--P-0078D4?style=flat-round&logo=github&logoColor=white" alt="Driver Code"/></a>
 </p>
+
+
 
 <p align="center">
   <a href="https://invensense.tdk.com/wp-content/uploads/2021/07/DS-000451-ICM-42670-P-v1.0.pdf"><img src="https://img.shields.io/badge/Datasheet-ICM--42670--P-0078D4?style=flat-round&logo=bookstack&logoColor=white" alt="Datasheet"/></a>
